@@ -226,6 +226,12 @@ extern NSString *const CHTCollectionElementKindSectionFooter;
 @property (nonatomic, assign) CGFloat minimumInteritemSpacing;
 
 /**
+ *  @brief Hard value to apply to the bottom of the item.
+ *  @discussion Default: 0.0
+ */
+@property (nonatomic, assign) CGFloat itemBottomPadding;
+
+/**
  *  @brief Height for section header
  *  @discussion
  *    If your collectionView's delegate doesn't implement `collectionView:layout:heightForHeaderInSection:`,

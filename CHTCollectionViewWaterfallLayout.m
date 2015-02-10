@@ -298,7 +298,7 @@ const NSInteger unionSize = 20;
       CGSize itemSize = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
       CGFloat itemHeight = 0;
       if (itemSize.height > 0 && itemSize.width > 0) {
-        itemHeight = floorf(itemSize.height * itemWidth / itemSize.width);
+        itemHeight = floorf(itemSize.height * itemWidth / itemSize.width) + self.itemBottomPadding;
       }
 
       attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
