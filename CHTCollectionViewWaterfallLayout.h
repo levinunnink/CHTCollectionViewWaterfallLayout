@@ -11,9 +11,9 @@
  *  Enumerated structure to define direction in which items can be rendered.
  */
 typedef NS_ENUM (NSUInteger, CHTCollectionViewWaterfallLayoutItemRenderDirection) {
-  CHTCollectionViewWaterfallLayoutItemRenderDirectionShortestFirst,
-  CHTCollectionViewWaterfallLayoutItemRenderDirectionLeftToRight,
-  CHTCollectionViewWaterfallLayoutItemRenderDirectionRightToLeft
+    CHTCollectionViewWaterfallLayoutItemRenderDirectionShortestFirst,
+    CHTCollectionViewWaterfallLayoutItemRenderDirectionLeftToRight,
+    CHTCollectionViewWaterfallLayoutItemRenderDirectionRightToLeft
 };
 
 /**
@@ -224,6 +224,12 @@ extern NSString *const CHTCollectionElementKindSectionFooter;
  *  @note This spacing is not applied to the space between header and columns or between columns and footer.
  */
 @property (nonatomic, assign) CGFloat minimumInteritemSpacing;
+
+/**
+ *  @brief Hard value to apply to the bottom of the item.
+ *  @discussion Default: 0.0
+ */
+@property (nonatomic, assign) CGFloat itemBottomPadding;
 
 /**
  *  @brief Height for section header
